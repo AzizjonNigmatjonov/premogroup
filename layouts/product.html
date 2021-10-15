@@ -1,0 +1,1351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PremoGroup</title>
+  <link rel="icon" href="../assets/images/svg/logo.svg" media="all">
+  <link rel="stylesheet" href="../assets/css/tailwind.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.7.2/dist/css/uikit.min.css" />
+  <link rel="stylesheet" href="../assets/sass/index.css" media="all">
+</style>
+</head>
+<body>
+
+  <div id="overlay" class="uk-position-fixed uk-width-1-1 uk-height-1-1 uk-position-top-left uk-flex uk-flex-center uk-flex-middle" style="background-color: #fff !important; z-index: 999;">
+    <div id="loader">
+      <div class="flex flex-col items-center justify-center">
+        <img class="w-[300px] sm:w-[410px]" src="../assets/images/svg/logo.svg" alt="Logo">
+        <img class="mt-10" src="../assets/images/main/loading.png" alt="loading">
+      </div>
+    </div>
+  </div>
+  
+  <div class="second-navbar"> 
+    <header class="header active absolute top-0 left-0 w-full z-30" uk-scrollspy="target: .animateText; cls: uk-animation-slide-right-small;delay: 300">
+      
+      <div class="uk-container uk-container-large">
+        <nav class="uk-flex-between uk-flex-middle uk-padding uk-padding-remove-horizontal" uk-grid>
+          
+          <div class="w-[230px] sm:w-[410px]">
+            <a href="index.html" class="uk-width-1-1">
+              <img class="uk-logo w-full object-cover" src="../assets/images/svg/logo.svg" alt="logo">
+            </a>        
+          </div>
+          
+          <div class="uk-visible@l">
+            <div>
+              <ul class="uk-visible@m uk-grid-collapse uk-flex-between space-x-6 xl:space-x-10 2xl:space-x-20" uk-grid>
+                
+                <li class="nav-item uk-active animateText text-[#001c3f]">
+                  <a class="relative nav-link link-hover-none text-[#001C3F] line-animation" href="index.html">
+                    Bosh sahifa
+                  </a>
+                </li>
+                <li class="nav-item animateText text-[#001c3f] line-animation">
+                  <a class="relative nav-link link-hover-none text-[#001C3F]" href="about.html">
+                    Biz haqimizda
+                  </a>
+                </li>
+                <li class="nav-item animateText text-[#001c3f] line-animation">
+                  <a class="relative nav-link link-hover-none text-[#001c3f]" href="javascript:void(0);">
+                    Mahsulotlar
+                  </a>
+                </li>
+                <li class="nav-item animateText text-[#fff] line-animation">
+                  <a class="relative nav-link link-hover-none text-[#fff]" href="contact.html">
+                    Kontaktlar
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          
+          <div>
+            <div class="uk-grid-medium uk-flex-middle" uk-grid>
+              <div class="uk-visible@m">
+                <ul class="uk-margin-remove flex items-center">
+                  <li class="text-[#fff]">
+                    <a href="javascript:void(0);" class="nav-link nav-lang hover:text-[#fff] hover:no-underline text-[#fff] items-center px-4 font-medium flex items-center animateText">
+                      UZ
+                      <svg class="stroke-current ml-1" width="13" height="13" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4.12435 10.0837H6.87435C9.16602 10.0837 10.0827 9.16699 10.0827 6.87533V4.12533C10.0827 1.83366 9.16602 0.916992 6.87435 0.916992H4.12435C1.83268 0.916992 0.916016 1.83366 0.916016 4.12533V6.87533C0.916016 9.16699 1.83268 10.0837 4.12435 10.0837Z" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M3.88184 4.87646L5.49975 6.4898L7.11767 4.87646" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </a>
+                    <div class="uk-padding-remove rounded-[5px]" style="min-width: 80px;" uk-dropdown="pos: bottom-justify;animation: uk-animation-slide-top-small; duration: 400; mode: click">
+                      
+                      <ul class="uk-grid uk-grid-small uk-flex-middle uk-flex-column uk-padding-small" uk-grid >
+                        <li class="uk-width-auto">
+                          <a href="javascript:void(0);" class="link-hover-none text-[#1c314e] font-semibold">
+                            RU
+                          </a>
+                        </li>
+                        <li class="uk-width-auto">
+                          <a href="javascript:void(0);" class="link-hover-none text-[#1c314e] font-semibold">
+                            EN
+                          </a>
+                        </li>
+                      </ul>
+                    </d>
+                  </li>
+                  
+                  <li class="text-[#fff] xl:ml-[20px] animateText">
+                    <a class="nav-link nav-num font-medium link-hover-none text-[#fff] flex items-center" href="tel:+998973040440" target="_blank">                                
+                      <span class="">
+                        97 304 04 40
+                      </span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              
+              <ul class="uk-hidden@l flex items-center">
+                <li>
+                  <a uk-toggle="target: #offcanvas-flip" class="" href="javascript:void(0);">
+                    <img class="nav-menu-img-white" src="../assets/images/svg/hamburger.svg" alt="menu">
+                  </a>             
+                </li>
+              </ul>
+            </div>
+          </div>
+          
+        </nav>
+      </div>
+    </header>
+    
+    
+    <div id="offcanvas-flip" uk-offcanvas="flip: true; overlay: true">
+      <div class="uk-offcanvas-bar">
+        
+        
+        <button class="uk-offcanvas-close" style="color: #fff;" type="button" uk-close></button>
+        
+        <ul class="uk-grid uk-grid-medium uk-flex-middle uk-flex-center uk-flex-column
+        uk-grid-column-collapse uk-margin-large-top"
+        uk-grid
+        >
+        <li class="">
+          <a class="text-[#fff] link-hover font-500 font-gilroy focus:no-underline" href="index.html">
+            Bosh sahifa
+          </a>
+        </li>
+        <li class="">
+          <a class="text-[#fff] link-hover font-500 font-gilroy focus:no-underline" href="about.html">
+            Biz haqimizda
+          </a>
+        </li>
+        <li class="">
+          <a class="text-[#fff] link-hover font-500 font-gilroy focus:no-underline" href="javascript:void(0);">
+            Mahsulotlar
+          </a>
+        </li>
+        <li>
+          <a class="text-[#fff] link-hover font-500 font-gilroy focus:no-underline" href="contact.html">
+            Kontaktlar
+          </a>
+        </li>
+        
+        <li class="text-[#fff] uk-hidden@m">
+          <a class="nav-link font-500 link-hover-none text-[#fff] flex items-center" href="tel:+998973040440" target="_blank">                                
+            <span class="">
+              97 304 04 40
+            </span>
+          </a>
+        </li>
+        
+        
+        <li class="text-[#fff] uk-hidden@m">                
+          <ul class="uk-grid uk-grid-small uk-flex-middle" uk-grid >
+            <li class="uk-width-auto text-[#111]">
+              <a href="javascript:void(0);" class="link-hover-none text-[#fff] font-semibold nav-lang-mobile active" style="color: #fff;">
+                UZ
+              </a>
+            </li>
+            <li>
+              <hr class="border-none w-[2px] h-[16px] bg-[#fff] bg-opacity-[0.42]">
+            </li>
+            <li class="uk-width-auto text-[#111]">
+              <a href="javascript:void(0);" class="link-hover-none text-[#fff] font-semibold" style="color: #fff;">
+                RU
+              </a>
+            </li>
+            <li>
+              <hr class="border-none w-[2px] h-[16px] bg-[#fff] bg-opacity-[0.42]">
+            </li>
+            <li class="uk-width-auto">
+              <a href="javascript:void(0);" class="link-hover-none text-[#fff] font-semibold" style="color: #fff;">
+                EN
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<main class="uk-section uk-position-relative uk-overflow-hidden uk-padding-remove-bottom h-[100vh]  main-section-second uk-flex uk-flex-middle" uk-scrollspy="target: .animateText; cls: uk-animation-slide-top-medium;delay: 300">          
+  
+  <div class="uk-container section-container uk-flex uk-flex-middle uk-position-relative">
+    <div class="text-[#001C3F] uk-width-1-2@l uk-width-3-5@m">
+      <div class="uk-child-width-1-1 uk-grid-medium" uk-grid>
+        <h1 class="heading-first text-[#001C3F] animateText">
+          Maxsulotlar
+        </h1>
+        <div class="uk-width-3-4@s uk-margin-top">
+          <p class="paragraph-first animateText">
+            Ban elimi sana vadiim duramadim yine galdim bu da benim dardim san seeev diye
+            yinemi sevayim da benim dardim san seeev diye 
+          </p>
+        </div>
+        <div>
+          <div class="text-[#fff] uk-display-inline-block uk-margin-top animateText">
+            <a href="javascript:void(0);" class="text-[#fff] btn-btn bg-[#001c3f] group btn-first link-hover-none flex items-center font-gilroy">
+              Aloqaga chiqish
+              <img class="ml-2 group-hover:translate-x-[5px] duration-100" src="../assets/images/svg/Arrow - Right.svg" alt="arrow">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="absolute left-0 top-0 xl:left-[-70px] xl:top-[-220px] 2xl:top-[-300px] z-[-1] uk-visible@m">
+      <div class="w-[400px] xl:w-[500px] 2xl:w-[600px]">
+        <img class="w-full h-full object-cover" src="../assets/images/main/main-start-img.png" alt="star">
+      </div>
+    </div>
+    
+  </div>  
+  
+</div>
+
+<div class="absolute right-0 top-0 uk-padding-remove-vertical" style="margin-left: auto;">
+  <div class="uk-height-1-1 main-img-left-second" style="margin-left: auto; min-height: 680px;">
+    <img class="uk-width-1-1 uk-height-1-1 object-cover relative z-[-1]" src="../assets/images/product/product-back.png" alt="background img">
+  </div>
+</div>
+
+
+
+</main>
+
+<section class="uk-section products-section uk-overflow-hidden relative xl:mt-[30px] 2xl:mt-[70px] uk-margin-bottom"  uk-scrollspy="target: .animateTop; cls: uk-animation-slide-top-medium; delay: 300">
+  <div class="uk-container uk-container-large">
+    
+    
+    <!-- service title start -->
+    <div class="uk-flex uk-flex-center">
+      <div class="uk-grid uk-grid-collapse uk-text-center uk-width-1-2@m uk-flex-column" uk-grid>
+        <h2 class="heading-first text-[#001c3f] animateTop">
+          Mahsulotlarimiz
+        </h2>
+        <div class="uk-width-3-4@s" style="margin: 0 auto;">
+          <p class="paragraph-first pt-2 animateTop">
+            Ban elimi sana vadiim duramadim yine galdim bu da benim dardim
+            san seeev diye yinemi sevayim Biznesini endigina boshlagan, 
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- service title end -->
+    
+    
+    <div>
+      <!-- service tab start -->
+      <div class="uk-margin-medium-top">
+        <ul class="uk-tab uk-flex-center md:w-[780px] uk-grid-collapse uk-child-width-1-2 uk-grid-match" uk-grid
+        uk-switcher="connect: #serviceSwitcher; animation: uk-animation-slide-left-medium, uk-animation-slide-right-medium"
+        uk-scrollspy="target: .animateText; cls: uk-animation-slide-left-medium;delay: 200;"
+        id="service-items-switcher" style="margin: 0 auto;">
+        <li class="animateText">
+          <a href="#" id="sliderTabBtn1" class="slider-tab-btn">Transformator podstansiyalari</a>
+        </li>
+        <li class="animateText uk-padding-remove-left">
+          <a href="#" id="sliderTabBtn2" class="slider-tab-btn">Kommutator uskunalari</a>
+        </li>
+      </ul>
+    </div>
+    <!-- service tab end -->
+    <!-- service swticher for desktop start -->
+    <div class="uk-flex-center uk-flex uk-margin-large-top uk-visible@l" uk-scrollspy="target: .animateLeft; cls: uk-animation-slide-left; delay: 300">
+      <ul id="serviceSwitcher" class="uk-switcher uk-margin" uk-scrollspy="target: .animateRight; cls: uk-animation-slide-right; delay: 300">
+        <div>
+          <li>
+            <div class="uk-gird uk-grid-large uk-child-width-1-2@l" uk-grid>
+              
+              <div>
+                <div class="p-4 sm:p-0 bg-[#001c3f] bg-opacity-[0.04] border-[4px] border-[#001c3f] border-opacity-[0.04] sm:bg-transparent sm:border-0 animateLeft">
+                  <div class="uk-grid-collapse uk-grid-match uk-overflow-hidden uk-flex-wrap-reverse" uk-grid>
+                    <div class="uk-width-expand@s relative sm:bg-[#001c3f] sm:bg-opacity-[0.04] sm:border-[3px] sm:border-r-0 border-[#001c3f] border-opacity-[0.04]">
+                      <div class="sm:py-6 md:py-10 sm:pl-6 md:pl-10 sm::pr-6 md:pr-10 mb-4">
+                        <h4 class="heading-second text-[#001c3f]">
+                          Yuqori kuchlanish
+                          2-GKPT vintlardek
+                        </h4>
+                        <div>
+                          <p class="text-sm mt-3 mb-3">
+                            Ban elimi sana vadiim duramadim yine galdim
+                            bu da benim dardim san seeev diye yinemi
+                          </p>
+                        </div>
+                        <div class="sm:absolute sm:bottom-6 md:bottom-10 sm:left-6 md:left-10 uk-grid uk-grid-small uk-flex-middle" uk-grid>
+                          <p class="text-[#001c3f] text-opacity-[0.72] font-gilroy font-500">Narx:</p>
+                          <h5 class="font-gilroy font-500 text-[#001c3f]">Kelishilgan holda</h5>
+                        </div>
+                      </div>
+                      <div class="absolute top-0 left-0 z-[-1] uk-width-3-5 uk-visible@l">
+                        <img class="w-full h-full" src="../assets/images/product/product-star.png" alt="star" loading="lazy">
+                      </div>
+                    </div>
+                    <div class="w-full sm:w-[43%]">
+                      <div class="pb-4 sm:pb-0">
+                        <img class="w-full h-full rounded-[5px] sm:rounded-[0px]" src="../assets/images/product/product-1.png" alt="product" loading="lazy">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div>
+                <div class="p-4 sm:p-0 bg-[#001c3f] bg-opacity-[0.04] border-[4px] border-[#001c3f] border-opacity-[0.04] sm:bg-transparent sm:border-0 animateRight">
+                  <div class="uk-grid-collapse uk-grid-match uk-overflow-hidden uk-flex-wrap-reverse" uk-grid>
+                    <div class="uk-width-expand@s relative sm:bg-[#001c3f] sm:bg-opacity-[0.04] sm:border-[3px] sm:border-r-0 border-[#001c3f] border-opacity-[0.04]">
+                      <div class="sm:py-6 md:py-10 sm:pl-6 md:pl-10 sm::pr-6 md:pr-10 mb-4">
+                        <h4 class="heading-second text-[#001c3f]">
+                          To'liq transformator
+                          blokli podstansiyalar
+                          110 kV
+                        </h4>
+                        <div>
+                          <p class="text-sm mt-3 mb-3">
+                            Ban elimi sana vadiim duramadim yine galdim
+                            bu da benim dardim san seeev diye yinemi
+                          </p>
+                        </div>
+                        <div class="sm:absolute sm:bottom-6 md:bottom-10 sm:left-6 md:left-10 uk-grid uk-grid-small uk-flex-middle" uk-grid>
+                          <p class="text-[#001c3f] text-opacity-[0.72] font-gilroy font-500">Narx:</p>
+                          <h5 class="font-gilroy font-500 text-[#001c3f]">Kelishilgan holda</h5>
+                        </div>
+                      </div>
+                      <div class="absolute top-0 left-0 z-[-1] uk-width-3-5 uk-visible@l">
+                        <img class="w-full h-full" src="../assets/images/product/product-star.png" alt="star" loading="lazy">
+                      </div>
+                    </div>
+                    <div class="w-full sm:w-[43%]">
+                      <div class="pb-4 sm:pb-0">
+                        <img class="w-full h-full rounded-[5px] sm:rounded-[0px]" src="../assets/images/product/product-2.png" alt="product" loading="lazy">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div>
+                <div class="p-4 sm:p-0 bg-[#001c3f] bg-opacity-[0.04] border-[4px] border-[#001c3f] border-opacity-[0.04] sm:bg-transparent sm:border-0 animateLeft">
+                  <div class="uk-grid-collapse uk-grid-match uk-overflow-hidden uk-flex-wrap-reverse" uk-grid>
+                    <div class="uk-width-expand@s relative sm:bg-[#001c3f] sm:bg-opacity-[0.04] sm:border-[3px] sm:border-r-0 border-[#001c3f] border-opacity-[0.04]">
+                      <div class="sm:py-6 md:py-10 sm:pl-6 md:pl-10 sm::pr-6 md:pr-10 mb-4">
+                        <h4 class="heading-second text-[#001c3f]">
+                          GKTP transformator
+                          podstansiyasi
+                        </h4>
+                        <div>
+                          <p class="text-sm mt-3 mb-3">
+                            Ban elimi sana vadiim duramadim yine galdim
+                            bu da benim dardim san seeev diye yinemi
+                          </p>
+                        </div>
+                        <div class="sm:absolute sm:bottom-6 md:bottom-10 sm:left-6 md:left-10 uk-grid uk-grid-small uk-flex-middle" uk-grid>
+                          <p class="text-[#001c3f] text-opacity-[0.72] font-gilroy font-500">Narx:</p>
+                          <h5 class="font-gilroy font-500 text-[#001c3f]">Kelishilgan holda</h5>
+                        </div>
+                      </div>
+                      <div class="absolute top-0 left-0 z-[-1] uk-width-3-5 uk-visible@l">
+                        <img class="w-full h-full" src="../assets/images/product/product-star.png" alt="star" loading="lazy">
+                      </div>
+                    </div>
+                    <div class="w-full sm:w-[43%]">
+                      <div class="pb-4 sm:pb-0">
+                        <img class="w-full h-full rounded-[5px] sm:rounded-[0px]" src="../assets/images/product/product-3.png" alt="product" loading="lazy">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div>
+                <div class="p-4 sm:p-0 bg-[#001c3f] bg-opacity-[0.04] border-[4px] border-[#001c3f] border-opacity-[0.04] sm:bg-transparent sm:border-0 animateRight">
+                  <div class="uk-grid-collapse uk-grid-match uk-overflow-hidden uk-flex-wrap-reverse" uk-grid>
+                    <div class="uk-width-expand@s relative sm:bg-[#001c3f] sm:bg-opacity-[0.04] sm:border-[3px] sm:border-r-0 border-[#001c3f] border-opacity-[0.04]">
+                      <div class="sm:py-6 md:py-10 sm:pl-6 md:pl-10 sm::pr-6 md:pr-10 mb-4">
+                        <h4 class="heading-second text-[#001c3f]">
+                          KTP transformator
+                          podstansiyasi
+                        </h4>
+                        <div>
+                          <p class="text-sm mt-3 mb-3">
+                            Ban elimi sana vadiim duramadim yine galdim
+                            bu da benim dardim san seeev diye yinemi
+                          </p>
+                        </div>
+                        <div class="sm:absolute sm:bottom-6 md:bottom-10 sm:left-6 md:left-10 uk-grid uk-grid-small uk-flex-middle" uk-grid>
+                          <p class="text-[#001c3f] text-opacity-[0.72] font-gilroy font-500">Narx:</p>
+                          <h5 class="font-gilroy font-500 text-[#001c3f]">Kelishilgan holda</h5>
+                        </div>
+                      </div>
+                      <div class="absolute top-0 left-0 z-[-1] uk-width-3-5 uk-visible@l">
+                        <img class="w-full h-full" src="../assets/images/product/product-star.png" alt="star" loading="lazy">
+                      </div>
+                    </div>
+                    <div class="w-full sm:w-[43%]">
+                      <div class="pb-4 sm:pb-0">
+                        <img class="w-full h-full rounded-[5px] sm:rounded-[0px]" src="../assets/images/product/product-4.png" alt="product" loading="lazy">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div>
+                <div class="p-4 sm:p-0 bg-[#001c3f] bg-opacity-[0.04] border-[4px] border-[#001c3f] border-opacity-[0.04] sm:bg-transparent sm:border-0 animateLeft">
+                  <div class="uk-grid-collapse uk-grid-match uk-overflow-hidden uk-flex-wrap-reverse" uk-grid>
+                    <div class="uk-width-expand@s relative sm:bg-[#001c3f] sm:bg-opacity-[0.04] sm:border-[3px] sm:border-r-0 border-[#001c3f] border-opacity-[0.04]">
+                      <div class="sm:py-6 md:py-10 sm:pl-6 md:pl-10 sm::pr-6 md:pr-10 mb-4">
+                        <h4 class="heading-second text-[#001c3f]">
+                          To'liq transformator
+                          blokli podstansiyalar
+                          110 kV
+                        </h4>
+                        <div>
+                          <p class="text-sm mt-3 mb-3">
+                            Ban elimi sana vadiim duramadim yine galdim
+                            bu da benim dardim san seeev diye yinemi
+                          </p>
+                        </div>
+                        <div class="sm:absolute sm:bottom-6 md:bottom-10 sm:left-6 md:left-10 uk-grid uk-grid-small uk-flex-middle" uk-grid>
+                          <p class="text-[#001c3f] text-opacity-[0.72] font-gilroy font-500">Narx:</p>
+                          <h5 class="font-gilroy font-500 text-[#001c3f]">Kelishilgan holda</h5>
+                        </div>
+                      </div>
+                      <div class="absolute top-0 left-0 z-[-1] uk-width-3-5 uk-visible@l">
+                        <img class="w-full h-full" src="../assets/images/product/product-star.png" alt="star" loading="lazy">
+                      </div>
+                    </div>
+                    <div class="w-full sm:w-[43%]">
+                      <div class="pb-4 sm:pb-0">
+                        <img class="w-full h-full rounded-[5px] sm:rounded-[0px]" src="../assets/images/product/product-2.png" alt="product" loading="lazy">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div>
+                <div class="p-4 sm:p-0 bg-[#001c3f] bg-opacity-[0.04] border-[4px] border-[#001c3f] border-opacity-[0.04] sm:bg-transparent sm:border-0 animateRight">
+                  <div class="uk-grid-collapse uk-grid-match uk-overflow-hidden uk-flex-wrap-reverse" uk-grid>
+                    <div class="uk-width-expand@s relative sm:bg-[#001c3f] sm:bg-opacity-[0.04] sm:border-[3px] sm:border-r-0 border-[#001c3f] border-opacity-[0.04]">
+                      <div class="sm:py-6 md:py-10 sm:pl-6 md:pl-10 sm::pr-6 md:pr-10 mb-4">
+                        <h4 class="heading-second text-[#001c3f]">
+                          GKTP transformator
+                          podstansiyasi
+                        </h4>
+                        <div>
+                          <p class="text-sm mt-3 mb-3">
+                            Ban elimi sana vadiim duramadim yine galdim
+                            bu da benim dardim san seeev diye yinemi
+                          </p>
+                        </div>
+                        <div class="sm:absolute sm:bottom-6 md:bottom-10 sm:left-6 md:left-10 uk-grid uk-grid-small uk-flex-middle" uk-grid>
+                          <p class="text-[#001c3f] text-opacity-[0.72] font-gilroy font-500">Narx:</p>
+                          <h5 class="font-gilroy font-500 text-[#001c3f]">Kelishilgan holda</h5>
+                        </div>
+                      </div>
+                      <div class="absolute top-0 left-0 z-[-1] uk-width-3-5 uk-visible@l">
+                        <img class="w-full h-full" src="../assets/images/product/product-star.png" alt="star" loading="lazy">
+                      </div>
+                    </div>
+                    <div class="w-full sm:w-[43%]">
+                      <div class="pb-4 sm:pb-0">
+                        <img class="w-full h-full rounded-[5px] sm:rounded-[0px]" src="../assets/images/product/product-3.png" alt="product" loading="lazy">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+          </li>
+        </div>
+        
+        <div>
+          <li>
+            <div class="uk-gird uk-grid-large uk-child-width-1-2@l" uk-grid>
+              
+              <div>
+                <div class="p-4 sm:p-0 bg-[#001c3f] bg-opacity-[0.04] border-[4px] border-[#001c3f] border-opacity-[0.04] sm:bg-transparent sm:border-0 animateLeft">
+                  <div class="uk-grid-collapse uk-grid-match uk-overflow-hidden uk-flex-wrap-reverse" uk-grid>
+                    <div class="uk-width-expand@s relative sm:bg-[#001c3f] sm:bg-opacity-[0.04] sm:border-[3px] sm:border-r-0 border-[#001c3f] border-opacity-[0.04]">
+                      <div class="sm:py-6 md:py-10 sm:pl-6 md:pl-10 sm::pr-6 md:pr-10 mb-4">
+                        <h4 class="heading-second text-[#001c3f]">
+                          Yuqori kuchlanish
+                          2-GKPT vintlardek
+                        </h4>
+                        <div>
+                          <p class="text-sm mt-3 mb-3">
+                            Ban elimi sana vadiim duramadim yine galdim
+                            bu da benim dardim san seeev diye yinemi
+                          </p>
+                        </div>
+                        <div class="sm:absolute sm:bottom-6 md:bottom-10 sm:left-6 md:left-10 uk-grid uk-grid-small uk-flex-middle" uk-grid>
+                          <p class="text-[#001c3f] text-opacity-[0.72] font-gilroy font-500">Narx:</p>
+                          <h5 class="font-gilroy font-500 text-[#001c3f]">Kelishilgan holda</h5>
+                        </div>
+                      </div>
+                      <div class="absolute top-0 left-0 z-[-1] uk-width-3-5 uk-visible@l">
+                        <img class="w-full h-full" src="../assets/images/product/product-star.png" alt="star" loading="lazy">
+                      </div>
+                    </div>
+                    <div class="w-full sm:w-[43%]">
+                      <div class="pb-4 sm:pb-0">
+                        <img class="w-full h-full rounded-[5px] sm:rounded-[0px]" src="../assets/images/product/product-1.png" alt="product" loading="lazy">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div>
+                <div class="p-4 sm:p-0 bg-[#001c3f] bg-opacity-[0.04] border-[4px] border-[#001c3f] border-opacity-[0.04] sm:bg-transparent sm:border-0 animateRight">
+                  <div class="uk-grid-collapse uk-grid-match uk-overflow-hidden uk-flex-wrap-reverse" uk-grid>
+                    <div class="uk-width-expand@s relative sm:bg-[#001c3f] sm:bg-opacity-[0.04] sm:border-[3px] sm:border-r-0 border-[#001c3f] border-opacity-[0.04]">
+                      <div class="sm:py-6 md:py-10 sm:pl-6 md:pl-10 sm::pr-6 md:pr-10 mb-4">
+                        <h4 class="heading-second text-[#001c3f]">
+                          To'liq transformator
+                          blokli podstansiyalar
+                          110 kV
+                        </h4>
+                        <div>
+                          <p class="text-sm mt-3 mb-3">
+                            Ban elimi sana vadiim duramadim yine galdim
+                            bu da benim dardim san seeev diye yinemi
+                          </p>
+                        </div>
+                        <div class="sm:absolute sm:bottom-6 md:bottom-10 sm:left-6 md:left-10 uk-grid uk-grid-small uk-flex-middle" uk-grid>
+                          <p class="text-[#001c3f] text-opacity-[0.72] font-gilroy font-500">Narx:</p>
+                          <h5 class="font-gilroy font-500 text-[#001c3f]">Kelishilgan holda</h5>
+                        </div>
+                      </div>
+                      <div class="absolute top-0 left-0 z-[-1] uk-width-3-5 uk-visible@l">
+                        <img class="w-full h-full" src="../assets/images/product/product-star.png" alt="star" loading="lazy">
+                      </div>
+                    </div>
+                    <div class="w-full sm:w-[43%]">
+                      <div class="pb-4 sm:pb-0">
+                        <img class="w-full h-full rounded-[5px] sm:rounded-[0px]" src="../assets/images/product/product-2.png" alt="product" loading="lazy">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div>
+                <div class="p-4 sm:p-0 bg-[#001c3f] bg-opacity-[0.04] border-[4px] border-[#001c3f] border-opacity-[0.04] sm:bg-transparent sm:border-0 animateLeft">
+                  <div class="uk-grid-collapse uk-grid-match uk-overflow-hidden uk-flex-wrap-reverse" uk-grid>
+                    <div class="uk-width-expand@s relative sm:bg-[#001c3f] sm:bg-opacity-[0.04] sm:border-[3px] sm:border-r-0 border-[#001c3f] border-opacity-[0.04]">
+                      <div class="sm:py-6 md:py-10 sm:pl-6 md:pl-10 sm::pr-6 md:pr-10 mb-4">
+                        <h4 class="heading-second text-[#001c3f]">
+                          GKTP transformator
+                          podstansiyasi
+                        </h4>
+                        <div>
+                          <p class="text-sm mt-3 mb-3">
+                            Ban elimi sana vadiim duramadim yine galdim
+                            bu da benim dardim san seeev diye yinemi
+                          </p>
+                        </div>
+                        <div class="sm:absolute sm:bottom-6 md:bottom-10 sm:left-6 md:left-10 uk-grid uk-grid-small uk-flex-middle" uk-grid>
+                          <p class="text-[#001c3f] text-opacity-[0.72] font-gilroy font-500">Narx:</p>
+                          <h5 class="font-gilroy font-500 text-[#001c3f]">Kelishilgan holda</h5>
+                        </div>
+                      </div>
+                      <div class="absolute top-0 left-0 z-[-1] uk-width-3-5 uk-visible@l">
+                        <img class="w-full h-full" src="../assets/images/product/product-star.png" alt="star" loading="lazy">
+                      </div>
+                    </div>
+                    <div class="w-full sm:w-[43%]">
+                      <div class="pb-4 sm:pb-0">
+                        <img class="w-full h-full rounded-[5px] sm:rounded-[0px]" src="../assets/images/product/product-3.png" alt="product" loading="lazy">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div>
+                <div class="p-4 sm:p-0 bg-[#001c3f] bg-opacity-[0.04] border-[4px] border-[#001c3f] border-opacity-[0.04] sm:bg-transparent sm:border-0 animateRight">
+                  <div class="uk-grid-collapse uk-grid-match uk-overflow-hidden uk-flex-wrap-reverse" uk-grid>
+                    <div class="uk-width-expand@s relative sm:bg-[#001c3f] sm:bg-opacity-[0.04] sm:border-[3px] sm:border-r-0 border-[#001c3f] border-opacity-[0.04]">
+                      <div class="sm:py-6 md:py-10 sm:pl-6 md:pl-10 sm::pr-6 md:pr-10 mb-4">
+                        <h4 class="heading-second text-[#001c3f]">
+                          KTP transformator
+                          podstansiyasi
+                        </h4>
+                        <div>
+                          <p class="text-sm mt-3 mb-3">
+                            Ban elimi sana vadiim duramadim yine galdim
+                            bu da benim dardim san seeev diye yinemi
+                          </p>
+                        </div>
+                        <div class="sm:absolute sm:bottom-6 md:bottom-10 sm:left-6 md:left-10 uk-grid uk-grid-small uk-flex-middle" uk-grid>
+                          <p class="text-[#001c3f] text-opacity-[0.72] font-gilroy font-500">Narx:</p>
+                          <h5 class="font-gilroy font-500 text-[#001c3f]">Kelishilgan holda</h5>
+                        </div>
+                      </div>
+                      <div class="absolute top-0 left-0 z-[-1] uk-width-3-5 uk-visible@l">
+                        <img class="w-full h-full" src="../assets/images/product/product-star.png" alt="star" loading="lazy">
+                      </div>
+                    </div>
+                    <div class="w-full sm:w-[43%]">
+                      <div class="pb-4 sm:pb-0">
+                        <img class="w-full h-full rounded-[5px] sm:rounded-[0px]" src="../assets/images/product/product-4.png" alt="product" loading="lazy">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div>
+                <div class="p-4 sm:p-0 bg-[#001c3f] bg-opacity-[0.04] border-[4px] border-[#001c3f] border-opacity-[0.04] sm:bg-transparent sm:border-0 animateLeft">
+                  <div class="uk-grid-collapse uk-grid-match uk-overflow-hidden uk-flex-wrap-reverse" uk-grid>
+                    <div class="uk-width-expand@s relative sm:bg-[#001c3f] sm:bg-opacity-[0.04] sm:border-[3px] sm:border-r-0 border-[#001c3f] border-opacity-[0.04]">
+                      <div class="sm:py-6 md:py-10 sm:pl-6 md:pl-10 sm::pr-6 md:pr-10 mb-4">
+                        <h4 class="heading-second text-[#001c3f]">
+                          To'liq transformator
+                          blokli podstansiyalar
+                          110 kV
+                        </h4>
+                        <div>
+                          <p class="text-sm mt-3 mb-3">
+                            Ban elimi sana vadiim duramadim yine galdim
+                            bu da benim dardim san seeev diye yinemi
+                          </p>
+                        </div>
+                        <div class="sm:absolute sm:bottom-6 md:bottom-10 sm:left-6 md:left-10 uk-grid uk-grid-small uk-flex-middle" uk-grid>
+                          <p class="text-[#001c3f] text-opacity-[0.72] font-gilroy font-500">Narx:</p>
+                          <h5 class="font-gilroy font-500 text-[#001c3f]">Kelishilgan holda</h5>
+                        </div>
+                      </div>
+                      <div class="absolute top-0 left-0 z-[-1] uk-width-3-5 uk-visible@l">
+                        <img class="w-full h-full" src="../assets/images/product/product-star.png" alt="star" loading="lazy">
+                      </div>
+                    </div>
+                    <div class="w-full sm:w-[43%]">
+                      <div class="pb-4 sm:pb-0">
+                        <img class="w-full h-full rounded-[5px] sm:rounded-[0px]" src="../assets/images/product/product-2.png" alt="product" loading="lazy">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div>
+                <div class="p-4 sm:p-0 bg-[#001c3f] bg-opacity-[0.04] border-[4px] border-[#001c3f] border-opacity-[0.04] sm:bg-transparent sm:border-0 animateRight">
+                  <div class="uk-grid-collapse uk-grid-match uk-overflow-hidden uk-flex-wrap-reverse" uk-grid>
+                    <div class="uk-width-expand@s relative sm:bg-[#001c3f] sm:bg-opacity-[0.04] sm:border-[3px] sm:border-r-0 border-[#001c3f] border-opacity-[0.04]">
+                      <div class="sm:py-6 md:py-10 sm:pl-6 md:pl-10 sm::pr-6 md:pr-10 mb-4">
+                        <h4 class="heading-second text-[#001c3f]">
+                          GKTP transformator
+                          podstansiyasi
+                        </h4>
+                        <div>
+                          <p class="text-sm mt-3 mb-3">
+                            Ban elimi sana vadiim duramadim yine galdim
+                            bu da benim dardim san seeev diye yinemi
+                          </p>
+                        </div>
+                        <div class="sm:absolute sm:bottom-6 md:bottom-10 sm:left-6 md:left-10 uk-grid uk-grid-small uk-flex-middle" uk-grid>
+                          <p class="text-[#001c3f] text-opacity-[0.72] font-gilroy font-500">Narx:</p>
+                          <h5 class="font-gilroy font-500 text-[#001c3f]">Kelishilgan holda</h5>
+                        </div>
+                      </div>
+                      <div class="absolute top-0 left-0 z-[-1] uk-width-3-5 uk-visible@l">
+                        <img class="w-full h-full" src="../assets/images/product/product-star.png" alt="star" loading="lazy">
+                      </div>
+                    </div>
+                    <div class="w-full sm:w-[43%]">
+                      <div class="pb-4 sm:pb-0">
+                        <img class="w-full h-full rounded-[5px] sm:rounded-[0px]" src="../assets/images/product/product-3.png" alt="product" loading="lazy">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+          </li>
+        </div>
+      </ul>
+    </div>
+    <!-- service swticher for desktop end -->
+    
+    <!-- service switcher for mobile start -->
+    <div class="uk-margin-large-top uk-hidden@l">
+      
+      <!-- mobile first slider start -->
+      <div data-target="sliderTabBtn1" class="uk-position-relative uk-visible-toggle mobile-slider active uk-animation-slide-left-medium" uk-slider>
+        <ul  class="uk-slider-items uk-grid uk-grid-match">
+          
+          <div class="uk-width-3-4">
+            <div class="p-4 sm:p-0 bg-[#001c3f] bg-opacity-[0.04] border-[4px] border-[#001c3f] border-opacity-[0.04] sm:bg-transparent sm:border-0">
+              <div class="uk-grid-collapse uk-grid-match uk-overflow-hidden uk-flex-wrap-reverse" uk-grid>
+                <div class="uk-width-expand@s product-page-product-item relative sm:bg-[#001c3f] sm:bg-opacity-[0.04] sm:border-[3px] sm:border-r-0 border-[#001c3f] border-opacity-[0.04]">
+                  <div class="sm:py-6 md:py-10 sm:pl-6 md:pl-10 sm::pr-6 md:pr-10 mb-4">
+                    <h4 class="text-[18px] font-600 sm:text-[27px] font-gilroy m-0 text-[#001c3f]">
+                      Yuqori kuchlanish
+                      2-GKPT vintlardek
+                    </h4>
+                    <div>
+                      <p class="text-sm mt-3 mb-3">
+                        Ban elimi sana vadiim duramadim yine galdim
+                        bu da benim dardim san seeev diye yinemi
+                      </p>
+                    </div>
+                    <div class="absolute bottom-0 left-0 sm:bottom-6 md:bottom-10 sm:left-6 md:left-10 uk-grid uk-grid-small uk-flex-middle" uk-grid>
+                      <p class="text-[#001c3f] text-opacity-[0.72] font-gilroy font-500">Narx:</p>
+                      <h5 class="font-gilroy font-500 text-[#001c3f]">Kelishilgan holda</h5>
+                    </div>
+                  </div>
+                  <div class="absolute top-0 left-0 z-[-1] uk-width-3-5 uk-visible@l">
+                    <img class="w-full h-full" src="../assets/images/product/product-star.png" alt="star" loading="lazy">
+                  </div>
+                </div>
+                <div class="w-full sm:w-[43%]">
+                  <div class="pb-4 sm:pb-0">
+                    <img class="w-full h-full rounded-[5px] sm:rounded-[0px]" src="../assets/images/product/product-1.png" alt="product" loading="lazy">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="uk-width-3-4">
+            <div class="p-4 sm:p-0 bg-[#001c3f] bg-opacity-[0.04] border-[4px] border-[#001c3f] border-opacity-[0.04] sm:bg-transparent sm:border-0">
+              <div class="uk-grid-collapse uk-grid-match uk-overflow-hidden uk-flex-wrap-reverse" uk-grid>
+                <div class="uk-width-expand@s product-page-product-item relative sm:bg-[#001c3f] sm:bg-opacity-[0.04] sm:border-[3px] sm:border-r-0 border-[#001c3f] border-opacity-[0.04]">
+                  <div class="sm:py-6 md:py-10 sm:pl-6 md:pl-10 sm::pr-6 md:pr-10 mb-4">
+                    <h4 class="heading-second text-[#001c3f]">
+                      To'liq transformator
+                      blokli podstansiyalar
+                      110 kV
+                    </h4>
+                    <div>
+                      <p class="text-sm mt-3 mb-3">
+                        Ban elimi sana vadiim duramadim yine galdim
+                        bu da benim dardim san seeev diye yinemi
+                      </p>
+                    </div>
+                    <div class="absolute bottom-0 left-0 sm:bottom-6 md:bottom-10 sm:left-6 md:left-10 uk-grid uk-grid-small uk-flex-middle" uk-grid>
+                      <p class="text-[#001c3f] text-opacity-[0.72] font-gilroy font-500">Narx:</p>
+                      <h5 class="font-gilroy font-500 text-[#001c3f]">Kelishilgan holda</h5>
+                    </div>
+                  </div>
+                  <div class="absolute top-0 left-0 z-[-1] uk-width-3-5 uk-visible@l">
+                    <img class="w-full h-full" src="../assets/images/product/product-star.png" alt="star" loading="lazy">
+                  </div>
+                </div>
+                <div class="w-full sm:w-[43%]">
+                  <div class="pb-4 sm:pb-0">
+                    <img class="w-full h-full rounded-[5px] sm:rounded-[0px]" src="../assets/images/product/product-2.png" alt="product" loading="lazy">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="uk-width-3-4">
+            <div class="p-4 sm:p-0 bg-[#001c3f] bg-opacity-[0.04] border-[4px] border-[#001c3f] border-opacity-[0.04] sm:bg-transparent sm:border-0">
+              <div class="uk-grid-collapse uk-grid-match uk-overflow-hidden uk-flex-wrap-reverse" uk-grid>
+                <div class="uk-width-expand@s product-page-product-item relative sm:bg-[#001c3f] sm:bg-opacity-[0.04] sm:border-[3px] sm:border-r-0 border-[#001c3f] border-opacity-[0.04]">
+                  <div class="sm:py-6 md:py-10 sm:pl-6 md:pl-10 sm::pr-6 md:pr-10 mb-4">
+                    <h4 class="heading-second text-[#001c3f]">
+                      GKTP transformator
+                      podstansiyasi
+                    </h4>
+                    <div>
+                      <p class="text-sm mt-3 mb-3">
+                        Ban elimi sana vadiim duramadim yine galdim
+                        bu da benim dardim san seeev diye yinemi
+                      </p>
+                    </div>
+                    <div class="absolute bottom-0 left-0 sm:bottom-6 md:bottom-10 sm:left-6 md:left-10 uk-grid uk-grid-small uk-flex-middle" uk-grid>
+                      <p class="text-[#001c3f] text-opacity-[0.72] font-gilroy font-500">Narx:</p>
+                      <h5 class="font-gilroy font-500 text-[#001c3f]">Kelishilgan holda</h5>
+                    </div>
+                  </div>
+                  <div class="absolute top-0 left-0 z-[-1] uk-width-3-5 uk-visible@l">
+                    <img class="w-full h-full" src="../assets/images/product/product-star.png" alt="star" loading="lazy">
+                  </div>
+                </div>
+                <div class="w-full sm:w-[43%]">
+                  <div class="pb-4 sm:pb-0">
+                    <img class="w-full h-full rounded-[5px] sm:rounded-[0px]" src="../assets/images/product/product-3.png" alt="product" loading="lazy">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="uk-width-3-4">
+            <div class="p-4 sm:p-0 bg-[#001c3f] bg-opacity-[0.04] border-[4px] border-[#001c3f] border-opacity-[0.04] sm:bg-transparent sm:border-0">
+              <div class="uk-grid-collapse uk-grid-match uk-overflow-hidden uk-flex-wrap-reverse" uk-grid>
+                <div class="uk-width-expand@s product-page-product-item relative sm:bg-[#001c3f] sm:bg-opacity-[0.04] sm:border-[3px] sm:border-r-0 border-[#001c3f] border-opacity-[0.04]">
+                  <div class="sm:py-6 md:py-10 sm:pl-6 md:pl-10 sm::pr-6 md:pr-10 mb-4">
+                    <h4 class="heading-second text-[#001c3f]">
+                      KTP transformator
+                      podstansiyasi
+                    </h4>
+                    <div>
+                      <p class="text-sm mt-3 mb-3">
+                        Ban elimi sana vadiim duramadim yine galdim
+                        bu da benim dardim san seeev diye yinemi
+                      </p>
+                    </div>
+                    <div class="absolute bottom-0 left-0 sm:bottom-6 md:bottom-10 sm:left-6 md:left-10 uk-grid uk-grid-small uk-flex-middle" uk-grid>
+                      <p class="text-[#001c3f] text-opacity-[0.72] font-gilroy font-500">Narx:</p>
+                      <h5 class="font-gilroy font-500 text-[#001c3f]">Kelishilgan holda</h5>
+                    </div>
+                  </div>
+                  <div class="absolute top-0 left-0 z-[-1] uk-width-3-5 uk-visible@l">
+                    <img class="w-full h-full" src="../assets/images/product/product-star.png" alt="star" loading="lazy">
+                  </div>
+                </div>
+                <div class="w-full sm:w-[43%]">
+                  <div class="pb-4 sm:pb-0">
+                    <img class="w-full h-full rounded-[5px] sm:rounded-[0px]" src="../assets/images/product/product-4.png" alt="product" loading="lazy">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="uk-width-3-4">
+            <div class="p-4 sm:p-0 bg-[#001c3f] bg-opacity-[0.04] border-[4px] border-[#001c3f] border-opacity-[0.04] sm:bg-transparent sm:border-0">
+              <div class="uk-grid-collapse uk-grid-match uk-overflow-hidden uk-flex-wrap-reverse" uk-grid>
+                <div class="uk-width-expand@s product-page-product-item relative sm:bg-[#001c3f] sm:bg-opacity-[0.04] sm:border-[3px] sm:border-r-0 border-[#001c3f] border-opacity-[0.04]">
+                  <div class="sm:py-6 md:py-10 sm:pl-6 md:pl-10 sm::pr-6 md:pr-10 mb-4">
+                    <h4 class="heading-second text-[#001c3f]">
+                      Yuqori kuchlanish
+                      2-GKPT vintlardek
+                    </h4>
+                    <div>
+                      <p class="text-sm mt-3 mb-3">
+                        Ban elimi sana vadiim duramadim yine galdim
+                        bu da benim dardim san seeev diye yinemi
+                      </p>
+                    </div>
+                    <div class="absolute bottom-0 left-0 sm:bottom-6 md:bottom-10 sm:left-6 md:left-10 uk-grid uk-grid-small uk-flex-middle" uk-grid>
+                      <p class="text-[#001c3f] text-opacity-[0.72] font-gilroy font-500">Narx:</p>
+                      <h5 class="font-gilroy font-500 text-[#001c3f]">Kelishilgan holda</h5>
+                    </div>
+                  </div>
+                  <div class="absolute top-0 left-0 z-[-1] uk-width-3-5 uk-visible@l">
+                    <img class="w-full h-full" src="../assets/images/product/product-star.png" alt="star" loading="lazy">
+                  </div>
+                </div>
+                <div class="w-full sm:w-[43%]">
+                  <div class="pb-4 sm:pb-0">
+                    <img class="w-full h-full rounded-[5px] sm:rounded-[0px]" src="../assets/images/product/product-1.png" alt="product" loading="lazy">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="uk-width-3-4">
+            <div class="p-4 sm:p-0 bg-[#001c3f] bg-opacity-[0.04] border-[4px] border-[#001c3f] border-opacity-[0.04] sm:bg-transparent sm:border-0">
+              <div class="uk-grid-collapse uk-grid-match uk-overflow-hidden uk-flex-wrap-reverse" uk-grid>
+                <div class="uk-width-expand@s product-page-product-item relative sm:bg-[#001c3f] sm:bg-opacity-[0.04] sm:border-[3px] sm:border-r-0 border-[#001c3f] border-opacity-[0.04]">
+                  <div class="sm:py-6 md:py-10 sm:pl-6 md:pl-10 sm::pr-6 md:pr-10 mb-4">
+                    <h4 class="heading-second text-[#001c3f]">
+                      GKTP transformator
+                      podstansiyasi
+                    </h4>
+                    <div>
+                      <p class="text-sm mt-3 mb-3">
+                        Ban elimi sana vadiim duramadim yine galdim
+                        bu da benim dardim san seeev diye yinemi
+                      </p>
+                    </div>
+                    <div class="absolute bottom-0 left-0 sm:bottom-6 md:bottom-10 sm:left-6 md:left-10 uk-grid uk-grid-small uk-flex-middle" uk-grid>
+                      <p class="text-[#001c3f] text-opacity-[0.72] font-gilroy font-500">Narx:</p>
+                      <h5 class="font-gilroy font-500 text-[#001c3f]">Kelishilgan holda</h5>
+                    </div>
+                  </div>
+                  <div class="absolute top-0 left-0 z-[-1] uk-width-3-5 uk-visible@l">
+                    <img class="w-full h-full" src="../assets/images/product/product-star.png" alt="star" loading="lazy">
+                  </div>
+                </div>
+                <div class="w-full sm:w-[43%]">
+                  <div class="pb-4 sm:pb-0">
+                    <img class="w-full h-full rounded-[5px] sm:rounded-[0px]" src="../assets/images/product/product-3.png" alt="product" loading="lazy">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </ul>
+      </div>
+      <!-- mobile first slider end -->
+      
+      
+      <!-- mobile second slider start -->
+      <div data-target="sliderTabBtn2" class="uk-position-relative uk-visible-toggle mobile-slider uk-animation-slide-left-medium" uk-slider>
+        <ul  class="uk-slider-items uk-grid uk-grid-match">
+          
+          <div class="uk-width-3-4">
+            <div class="p-4 sm:p-0 bg-[#001c3f] bg-opacity-[0.04] border-[4px] border-[#001c3f] border-opacity-[0.04] sm:bg-transparent sm:border-0">
+              <div class="uk-grid-collapse uk-grid-match uk-overflow-hidden uk-flex-wrap-reverse" uk-grid>
+                <div class="uk-width-expand@s product-page-product-item relative sm:bg-[#001c3f] sm:bg-opacity-[0.04] sm:border-[3px] sm:border-r-0 border-[#001c3f] border-opacity-[0.04]">
+                  <div class="sm:py-6 md:py-10 sm:pl-6 md:pl-10 sm::pr-6 md:pr-10 mb-4">
+                    <h4 class="text-[18px] font-600 sm:text-[27px] font-gilroy m-0 text-[#001c3f]">
+                      Yuqori kuchlanish
+                      2-GKPT vintlardek
+                    </h4>
+                    <div>
+                      <p class="text-sm mt-3 mb-3">
+                        Ban elimi sana vadiim duramadim yine galdim
+                        bu da benim dardim san seeev diye yinemi
+                      </p>
+                    </div>
+                    <div class="absolute bottom-0 left-0 sm:bottom-6 md:bottom-10 sm:left-6 md:left-10 uk-grid uk-grid-small uk-flex-middle" uk-grid>
+                      <p class="text-[#001c3f] text-opacity-[0.72] font-gilroy font-500">Narx:</p>
+                      <h5 class="font-gilroy font-500 text-[#001c3f]">Kelishilgan holda</h5>
+                    </div>
+                  </div>
+                  <div class="absolute top-0 left-0 z-[-1] uk-width-3-5 uk-visible@l">
+                    <img class="w-full h-full" src="../assets/images/product/product-star.png" alt="star" loading="lazy">
+                  </div>
+                </div>
+                <div class="w-full sm:w-[43%]">
+                  <div class="pb-4 sm:pb-0">
+                    <img class="w-full h-full rounded-[5px] sm:rounded-[0px]" src="../assets/images/product/product-1.png" alt="product" loading="lazy">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="uk-width-3-4">
+            <div class="p-4 sm:p-0 bg-[#001c3f] bg-opacity-[0.04] border-[4px] border-[#001c3f] border-opacity-[0.04] sm:bg-transparent sm:border-0">
+              <div class="uk-grid-collapse uk-grid-match uk-overflow-hidden uk-flex-wrap-reverse" uk-grid>
+                <div class="uk-width-expand@s product-page-product-item relative sm:bg-[#001c3f] sm:bg-opacity-[0.04] sm:border-[3px] sm:border-r-0 border-[#001c3f] border-opacity-[0.04]">
+                  <div class="sm:py-6 md:py-10 sm:pl-6 md:pl-10 sm::pr-6 md:pr-10 mb-4">
+                    <h4 class="heading-second text-[#001c3f]">
+                      To'liq transformator
+                      blokli podstansiyalar
+                      110 kV
+                    </h4>
+                    <div>
+                      <p class="text-sm mt-3 mb-3">
+                        Ban elimi sana vadiim duramadim yine galdim
+                        bu da benim dardim san seeev diye yinemi
+                      </p>
+                    </div>
+                    <div class="absolute bottom-0 left-0 sm:bottom-6 md:bottom-10 sm:left-6 md:left-10 uk-grid uk-grid-small uk-flex-middle" uk-grid>
+                      <p class="text-[#001c3f] text-opacity-[0.72] font-gilroy font-500">Narx:</p>
+                      <h5 class="font-gilroy font-500 text-[#001c3f]">Kelishilgan holda</h5>
+                    </div>
+                  </div>
+                  <div class="absolute top-0 left-0 z-[-1] uk-width-3-5 uk-visible@l">
+                    <img class="w-full h-full" src="../assets/images/product/product-star.png" alt="star" loading="lazy">
+                  </div>
+                </div>
+                <div class="w-full sm:w-[43%]">
+                  <div class="pb-4 sm:pb-0">
+                    <img class="w-full h-full rounded-[5px] sm:rounded-[0px]" src="../assets/images/product/product-2.png" alt="product" loading="lazy">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="uk-width-3-4">
+            <div class="p-4 sm:p-0 bg-[#001c3f] bg-opacity-[0.04] border-[4px] border-[#001c3f] border-opacity-[0.04] sm:bg-transparent sm:border-0">
+              <div class="uk-grid-collapse uk-grid-match uk-overflow-hidden uk-flex-wrap-reverse" uk-grid>
+                <div class="uk-width-expand@s product-page-product-item relative sm:bg-[#001c3f] sm:bg-opacity-[0.04] sm:border-[3px] sm:border-r-0 border-[#001c3f] border-opacity-[0.04]">
+                  <div class="sm:py-6 md:py-10 sm:pl-6 md:pl-10 sm::pr-6 md:pr-10 mb-4">
+                    <h4 class="heading-second text-[#001c3f]">
+                      GKTP transformator
+                      podstansiyasi
+                    </h4>
+                    <div>
+                      <p class="text-sm mt-3 mb-3">
+                        Ban elimi sana vadiim duramadim yine galdim
+                        bu da benim dardim san seeev diye yinemi
+                      </p>
+                    </div>
+                    <div class="absolute bottom-0 left-0 sm:bottom-6 md:bottom-10 sm:left-6 md:left-10 uk-grid uk-grid-small uk-flex-middle" uk-grid>
+                      <p class="text-[#001c3f] text-opacity-[0.72] font-gilroy font-500">Narx:</p>
+                      <h5 class="font-gilroy font-500 text-[#001c3f]">Kelishilgan holda</h5>
+                    </div>
+                  </div>
+                  <div class="absolute top-0 left-0 z-[-1] uk-width-3-5 uk-visible@l">
+                    <img class="w-full h-full" src="../assets/images/product/product-star.png" alt="star" loading="lazy">
+                  </div>
+                </div>
+                <div class="w-full sm:w-[43%]">
+                  <div class="pb-4 sm:pb-0">
+                    <img class="w-full h-full rounded-[5px] sm:rounded-[0px]" src="../assets/images/product/product-3.png" alt="product" loading="lazy">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="uk-width-3-4">
+            <div class="p-4 sm:p-0 bg-[#001c3f] bg-opacity-[0.04] border-[4px] border-[#001c3f] border-opacity-[0.04] sm:bg-transparent sm:border-0">
+              <div class="uk-grid-collapse uk-grid-match uk-overflow-hidden uk-flex-wrap-reverse" uk-grid>
+                <div class="uk-width-expand@s product-page-product-item relative sm:bg-[#001c3f] sm:bg-opacity-[0.04] sm:border-[3px] sm:border-r-0 border-[#001c3f] border-opacity-[0.04]">
+                  <div class="sm:py-6 md:py-10 sm:pl-6 md:pl-10 sm::pr-6 md:pr-10 mb-4">
+                    <h4 class="heading-second text-[#001c3f]">
+                      KTP transformator
+                      podstansiyasi
+                    </h4>
+                    <div>
+                      <p class="text-sm mt-3 mb-3">
+                        Ban elimi sana vadiim duramadim yine galdim
+                        bu da benim dardim san seeev diye yinemi
+                      </p>
+                    </div>
+                    <div class="absolute bottom-0 left-0 sm:bottom-6 md:bottom-10 sm:left-6 md:left-10 uk-grid uk-grid-small uk-flex-middle" uk-grid>
+                      <p class="text-[#001c3f] text-opacity-[0.72] font-gilroy font-500">Narx:</p>
+                      <h5 class="font-gilroy font-500 text-[#001c3f]">Kelishilgan holda</h5>
+                    </div>
+                  </div>
+                  <div class="absolute top-0 left-0 z-[-1] uk-width-3-5 uk-visible@l">
+                    <img class="w-full h-full" src="../assets/images/product/product-star.png" alt="star" loading="lazy">
+                  </div>
+                </div>
+                <div class="w-full sm:w-[43%]">
+                  <div class="pb-4 sm:pb-0">
+                    <img class="w-full h-full rounded-[5px] sm:rounded-[0px]" src="../assets/images/product/product-4.png" alt="product" loading="lazy">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="uk-width-3-4">
+            <div class="p-4 sm:p-0 bg-[#001c3f] bg-opacity-[0.04] border-[4px] border-[#001c3f] border-opacity-[0.04] sm:bg-transparent sm:border-0">
+              <div class="uk-grid-collapse uk-grid-match uk-overflow-hidden uk-flex-wrap-reverse" uk-grid>
+                <div class="uk-width-expand@s product-page-product-item relative sm:bg-[#001c3f] sm:bg-opacity-[0.04] sm:border-[3px] sm:border-r-0 border-[#001c3f] border-opacity-[0.04]">
+                  <div class="sm:py-6 md:py-10 sm:pl-6 md:pl-10 sm::pr-6 md:pr-10 mb-4">
+                    <h4 class="heading-second text-[#001c3f]">
+                      Yuqori kuchlanish
+                      2-GKPT vintlardek
+                    </h4>
+                    <div>
+                      <p class="text-sm mt-3 mb-3">
+                        Ban elimi sana vadiim duramadim yine galdim
+                        bu da benim dardim san seeev diye yinemi
+                      </p>
+                    </div>
+                    <div class="absolute bottom-0 left-0 sm:bottom-6 md:bottom-10 sm:left-6 md:left-10 uk-grid uk-grid-small uk-flex-middle" uk-grid>
+                      <p class="text-[#001c3f] text-opacity-[0.72] font-gilroy font-500">Narx:</p>
+                      <h5 class="font-gilroy font-500 text-[#001c3f]">Kelishilgan holda</h5>
+                    </div>
+                  </div>
+                  <div class="absolute top-0 left-0 z-[-1] uk-width-3-5 uk-visible@l">
+                    <img class="w-full h-full" src="../assets/images/product/product-star.png" alt="star" loading="lazy">
+                  </div>
+                </div>
+                <div class="w-full sm:w-[43%]">
+                  <div class="pb-4 sm:pb-0">
+                    <img class="w-full h-full rounded-[5px] sm:rounded-[0px]" src="../assets/images/product/product-1.png" alt="product" loading="lazy">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="uk-width-3-4">
+            <div class="p-4 sm:p-0 bg-[#001c3f] bg-opacity-[0.04] border-[4px] border-[#001c3f] border-opacity-[0.04] sm:bg-transparent sm:border-0">
+              <div class="uk-grid-collapse uk-grid-match uk-overflow-hidden uk-flex-wrap-reverse" uk-grid>
+                <div class="uk-width-expand@s product-page-product-item relative sm:bg-[#001c3f] sm:bg-opacity-[0.04] sm:border-[3px] sm:border-r-0 border-[#001c3f] border-opacity-[0.04]">
+                  <div class="sm:py-6 md:py-10 sm:pl-6 md:pl-10 sm::pr-6 md:pr-10 mb-4">
+                    <h4 class="heading-second text-[#001c3f]">
+                      GKTP transformator
+                      podstansiyasi
+                    </h4>
+                    <div>
+                      <p class="text-sm mt-3 mb-3">
+                        Ban elimi sana vadiim duramadim yine galdim
+                        bu da benim dardim san seeev diye yinemi
+                      </p>
+                    </div>
+                    <div class="absolute bottom-0 left-0 sm:bottom-6 md:bottom-10 sm:left-6 md:left-10 uk-grid uk-grid-small uk-flex-middle" uk-grid>
+                      <p class="text-[#001c3f] text-opacity-[0.72] font-gilroy font-500">Narx:</p>
+                      <h5 class="font-gilroy font-500 text-[#001c3f]">Kelishilgan holda</h5>
+                    </div>
+                  </div>
+                  <div class="absolute top-0 left-0 z-[-1] uk-width-3-5 uk-visible@l">
+                    <img class="w-full h-full" src="../assets/images/product/product-star.png" alt="star" loading="lazy">
+                  </div>
+                </div>
+                <div class="w-full sm:w-[43%]">
+                  <div class="pb-4 sm:pb-0">
+                    <img class="w-full h-full rounded-[5px] sm:rounded-[0px]" src="../assets/images/product/product-3.png" alt="product" loading="lazy">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </ul>
+      </div>
+      <!-- mobile second slider end -->
+      
+    </div>
+    <!-- service switcher for mobile end -->
+    
+  </div>
+  
+  
+</div>
+</section>
+
+<section class="uk-section uk-position-relative bg-[#f4f4f4] uk-padding-remove-vertical uk-overflow-hidden">
+  <div class="bg-[#001C3F] uk-flex uk-flex-middle z-[-1]">
+    
+    <div class="uk-width-1-3 uk-visible@l" uk-scrollspy="cls: uk-animation-slide-left;delay: 300">
+      <img class="w-[100%] h-[100%] " src="../assets/images/main/count-img.png" alt="counter img" loading="lazy">
+    </div>
+    
+    <div class="count-content-wrapper uk-width-expand@m z-[2]" uk-scrollspy="target: .animateRight; cls: uk-animation-slide-right;delay: 300">
+      <div class="uk-grid uk-grid-medium uk-child-width-1-1 uk-child-width-auto@m" uk-grid>
+        
+        <div>
+          <div class="uk-grid uk-grid-collapse uk-child-width-1-1 uk-text-center animateRight uk-scrollspy-inview" uk-grid>
+            <h1 class="text-[#fff] text-[44px] md:text-[65px] font-bold m-0" style="font-family: 'Muller';">48</h1>
+            <h3 class="text-[#fff] text-[12px] md:text-[16px] font-bold m-0" style="font-family: 'Muller';">Hodimlarimiz</h3>
+          </div>
+        </div>
+        
+        <div class="uk-visible@m animateRight">
+          <div class="uk-height-1-1 uk-flex uk-flex-center@m">
+            <hr class="border-none h-[100%] w-[2px] bg-[#fff] bg-opacity-[0.10]">
+          </div>
+        </div>
+        
+        <div>
+          <div class="uk-grid uk-grid-collapse uk-child-width-1-1 uk-text-center animateRight" uk-grid>
+            <h1 class="text-[#fff] text-[44px] md:text-[65px] font-bold m-0" style="font-family: 'Muller';">18</h1>
+            <h3 class="text-[#fff] text-[12px] md:text-[16px] font-bold m-0" style="font-family: 'Muller';">Yillik tajriba</h3>
+          </div>
+        </div>
+        
+        <div class="uk-visible@m animateRight">
+          <div class="uk-height-1-1 uk-flex uk-flex-center">
+            <hr class="border-none h-[100%] w-[2px] bg-[#fff] bg-opacity-[0.10]">
+          </div>
+        </div>
+        
+        <div>
+          <div class="uk-grid uk-grid-collapse uk-child-width-1-1 uk-text-center animateRight" uk-grid>
+            <h1 class="text-[#fff] text-[44px] md:text-[65px] font-bold m-0" style="font-family: 'Muller';">999</h1>
+            <h3 class="text-[#fff] text-[12px] md:text-[16px] font-bold m-0" style="font-family: 'Muller';">Yana nimadir yozamiz</h3>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+
+    <div class="uk-hidden@m absolute left-[-170px] bottom-[90px] z-[1]">
+      <div class="">
+        <img class="w-[400px] h-full object-cover" src="../assets/images/main/count-star.png" alt="star" loading="lazy">
+      </div>
+    </div>
+    
+    <div class="uk-hidden@m absolute top-[-50px] right-[-320px] z-[1]">
+      <img class="w-full h-full rotate-[65deg] object-cover" src="../assets/images/main/count-star.png" alt="star" loading="lazy">
+    </div>
+    
+    <div class="uk-visible@l absolute left-[340px] 2xl:left-[460px] bottom-[-340px] z-[1]">
+      <div class="">
+        <img class="w-full h-full object-cover" src="../assets/images/main/count-star.png" alt="star" loading="lazy">
+      </div>
+    </div>
+    
+    <div class="uk-visible@l absolute  right-[-180px] z-[1]">
+      <img class="w-full h-full object-cover" src="../assets/images/main/count-star.png" alt="star" loading="lazy">
+    </div>
+    
+  </div>
+</section>
+
+<!-- section for separate the section above and bottom -->
+<section class="uk-section"></section>
+<!-- section for separate the section above and bottom -->
+
+<section class="uk-section form-section uk-position-relative uk-overflow-hidden" uk-scrollspy="target: .animateLeft; cls: uk-animation-slide-left-medium; delay: 300">
+  <div class="uk-container uk-container-large uk-padding">
+    <div class="uk-grid uk-child-width-1-1 uk-width-3-4@m z-[1] relative uk-flex-center" uk-grid>
+      
+      <div class="uk-width-1-1">
+        <h1 class="heading-first text-[#fff] z-10 animateLeft">Savollaringiz qoldimi?</h1>
+      </div>
+      
+      <div class="">
+        <div class="uk-grid uk-flex-middle uk-grid-small" uk-grid>
+          <div class="text-[#fff] animateLeft">
+            <a class="text-[28px] sm:text-[34px] font-gilroy font-bold tracking-[2px] text-[#fff] m-0 link-hover-none hover:text-[#ffffff99] duration-300" href="tel:+998973742111">+998 97 374 2111</a>
+          </div>
+          <div class="text-[#fff] animateLeft">
+            <a class="link-hover-none md:ml-10 border-b border-[#fff] border-opacity-[0.75] pb-2 text-[#fff] hover:border-[#ffffff99] hover:text-[#ffffff99] duration-300" href="mailto:premogroupenergy@gmail.com">premogroupenergy@gmail.com</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="uk-width-1-1">
+        <div class="uk-grid uk-grid-medium uk-child-width-1-1" uk-grid>
+          <div class="uk-width-1-2@l uk-width-3-4@m uk-width-1-1 animateLeft">
+            <p class="paragraph-first text-[#fff] text-opacity-[0.72] text-[15px]" style="font-weight: 400;">
+              Oz malumotlaringizni qoldiring va biz sizga yigirma tort soat ichida aloqaga chiqamiz
+            </p>
+          </div>
+          <div>
+            <form action="" class="uk-grid uk-grid-medium uk-child-width-auto@s uk-child-width-1-1" uk-grid>
+              <div class="animateLeft">
+                <input onkeypress="isInputString(event)" class="form-input text-[#001c3f] font-gilroy py-4 px-[36px] uk-width-1-1" style="font-weight: 500;" type="text" placeholder="Huzayfa ibn Baxrom">
+              </div>
+              <div class="animateLeft">
+                <input id="inputCallMask" class="form-input text-[#001c3f] font-gilroy py-4 px-[36px] uk-width-1-1" style="font-weight: 500;" type="tel" placeholder="+998 9X XXX XX XX">
+              </div>
+              <div class="text-[#001c3f] animateLeft">
+                <a class="btn-first text-[#001c3f] bg-[#EC9527] font-gilroy font-500 uk-text-center uk-flex uk-flex-center uk-flex-middle link-hover-none form-btn-anim" href="javascript:void(0);">
+                  Ma'lumotlarni yuborish
+                  <svg class="ml-2 fill-current" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3.70716 11.1771C3.3078 11.2321 3 11.5795 3 11.9999C3 12.4585 3.36631 12.8302 3.81818 12.8302H18.1999L13.0047 18.0813L12.9253 18.1743C12.687 18.4989 12.7124 18.9602 13.0023 19.2556C13.3212 19.5805 13.8392 19.5816 14.1594 19.258L20.7477 12.5996C20.787 12.5614 20.8224 12.5194 20.8536 12.474C21.0766 12.1498 21.0452 11.6999 20.7593 11.4111L14.1593 4.74193L14.0674 4.66174C13.7466 4.42125 13.2921 4.44905 13.0023 4.74446C12.6834 5.06942 12.6845 5.59515 13.0047 5.91871L18.2012 11.1696L3.81818 11.1696L3.70716 11.1771Z"/>
+                  </svg>
+                </a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      
+      <div class="animateLeft">
+        <p class="paragraph-first text-[#fff] text-opacity-[0.72] text-[13px] tracking-[0.3px] leading-[18px] sm:w-[70%] md:w-[43%] font-gilroy">
+          Ban elimi sana vadiim duramadim yine galdim bu da benim dardim
+          san seeev diye yinemi sevayim Biznesini endigina boshlagan, 
+        </p>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+<footer class="uk-section uk-margin-large-top uk-padding-remove-bottom uk-overflow-hidden" uk-scrollspy="target: .animateLeft; cls: uk-animation-slide-left; delay: 300">
+  
+  <div uk-scrollspy="target: .animateRight; cls: uk-animation-slide-right; delay: 300">
+    <div class="border-t-2 border-b-2 border-[#001c3f] border-opacity-[0.12]">
+      <div class="uk-container uk-flex uk-flex-center uk-padding-large" uk-scrollspy="target: .animateTop; cls: uk-animation-slide-top; delay: 300">
+        <div class="uk-grid uk-flex-between" uk-grid>
+          
+          <div class="uk-width-auto@s uk-flex uk-flex-middle uk-flex-center uk-flex-left@s">
+            <div class="uk-grid-small uk-flex-column" uk-grid>
+              <a href="javascript:void(0);" class="uk-flex uk-flex-center uk-flex-left@s animateLeft">
+                <img class="w-[210px]" src="../assets/images/svg/logo.svg" alt="logo">
+              </a>
+              <div class="animateLeft">
+                <p class="text-[#130F26] font-gilroy font-500 text-lg">Bu yerga bir ajoyib slogan bo’ladi.</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="uk-width-auto@s uk-text-center uk-text-left@s">
+            <ul class="uk-grid-small uk-flex-column space-y-2" uk-grid>
+              <li class="animateTop">
+                <h3 class="text-[20px] text-opacity-[0.40] font-gilroy font-semibold m-0 uk-margin-small-bottom" style="color: rgba(19, 15, 38, 0.40);">
+                  Website
+                </h3>
+              </li>
+              <li class="animateTop">
+                <a class="font-500 link-hover-none line-animation" style="color: #130f26;" href="index.html">
+                  Bosh sahifa
+                </a>
+              </li>
+              <li class="animateTop">
+                <a class="font-500 link-hover-none line-animation" style="color: #130f26;" href="about.html">
+                  Biz haqimizda
+                </a>
+              </li>
+              <li class="animateTop">
+                <a class="font-500 link-hover-none line-animation" style="color: #130f26;" href="javascript:void(0);">
+                  Mahsulotlar
+                </a>
+              </li>
+              <li class="animateTop">
+                <a class="font-500 link-hover-none line-animation" style="color: #130f26;" href="contact.html">
+                  Kontaktlar
+                </a>
+              </li>
+            </ul>
+          </div>
+          
+          <div class="uk-width-1-3@s uk-text-center uk-text-left@s">
+            <ul class="uk-grid-small uk-flex-column space-y-2" uk-grid>
+              <li class="animateRight">
+                <h3 class="text-[20px] text-opacity-[0.40] font-gilroy font-semibold m-0 uk-margin-small-bottom" style="color: rgba(19, 15, 38, 0.40);">
+                  Kontaktlar
+                </h3>
+              </li>
+              <li class="animateRight hover:scale-105 duration-200">
+                <a class="font-500 link-hover-none" style="color: #130f26;" href="javascript:void(0);">
+                  Bu joyda Premo Group kompaniyasining joulashuvi yozilishi kutilmoqda
+                </a>
+              </li>
+              <li class="animateRight hover:scale-105 duration-200"">
+                <a class="font-500 link-hover-none" style="color: #130f26;" href="tel:+998 97 374 2111">
+                  +998 97 374 2111
+                </a>
+              </li>
+              <li class="animateRight hover:scale-105 duration-200"">
+                <a class="font-500 link-hover-none" style="color: #130f26;" href="mailto:premogroupenergy@gmail.com">
+                  premogroupenergy@gmail.com
+                </a>
+              </li>
+            </ul>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    
+    <div class="uk-container uk-padding">
+      <div class="uk-grid uk-flex-between@s uk-child-width-auto@s uk-flex-middle" uk-grid>
+        <div class="uk-text-center uk-text-left@s animateLeft">
+          <p class="text-[#130f26] text-opacity-[0.56] text-sm font-400 m-0">
+            © 2021 PremoGroup company
+          </p>
+        </div>
+        
+        <div class="uk-flex uk-flex-center uk-flex-right@s">
+          <a href="https://mount.uz/uz" class="animateRight">
+            <img class="w-[100px]" src="../assets/images/svg/mountain-logo.svg" alt="logo">
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.7.2/dist/js/uikit.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.7.2/dist/js/uikit-icons.min.js"></script>
+
+<script defer src="https://unpkg.com/imask"></script>
+<script defer src="../assets/js/index.js"></script>
+</body>
+</html>

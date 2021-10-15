@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .heading-first {
+        @apply text-[34px] sm:text-[43px] tracking-[1px] m-0;
+    }
+
+    .heading-first {
+        font-family: 'Muller'; font-weight: bold;
+    }
+
+    .heading-second {
+        @apply text-[20px] xl:text-[27px] m-0;
+    }
+
+    .heading-second  {
+        font-family: 'Gilroy'; font-weight: 600;
+    }
+
+    .paragraph-first {
+        @apply text-[#001C3F] text-opacity-[0.80] leading-[24px] tracking-[0.3px] m-0;
+    }
+
+    .paragraph-first {
+        font-weight: 500; font-family: 'Gilroy';
+    }
+
+    .link-hover-none {
+        @apply hover:no-underline;
+    }
+    .link-hover-none:hover {
+        color: inherit;
+    }
+
+    .btn-first {
+        padding: 16px 28px; display: flex;
+    }
+
+    .font-muller {
+        font-family: 'Muller' !important;
+    }
+
+    .font-gilroy {
+        font-family: 'Gilroy';
+    }
+
+    .font-300 {
+        font-weight: 300;
+    }
+
+    .font-400 {
+        font-weight: 400;
+    }
+
+    .font-500 {
+        font-weight: 500;
+    }
+
+    .font-600 {
+        font-weight: 600;
+    }
+}
